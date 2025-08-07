@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Mono:wght@300;400;500&family=Zen+Kurenaido:wght@400&display=swap");
 
 * {
     margin: 0;
@@ -7,13 +7,13 @@
 }
 
 :root {
-    --primary-color: #f75e5f;
-    --dark-color: #0c0c30;
-    --bg-color: #ffffff;
+    --primary-color: #ff004f;
+    --dark-color: #1c1e36;
+    --bg-color: #f8f8f8;
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     background-color: var(--bg-color);
     color: var(--dark-color);
     line-height: 1.6;
@@ -33,17 +33,18 @@ body {
 }
 
 .logo-placeholder {
+    font-family: "Zen Kurenaido", serif;
     width: 120px;
     height: 60px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    color: white;
-    font-weight: 500;
-    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 6rem;
 }
 
 /* Header */
@@ -53,7 +54,7 @@ body {
 }
 
 .main-title {
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--dark-color);
@@ -112,7 +113,7 @@ body {
     border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 500;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -148,6 +149,7 @@ body {
     width: 80px;
     height: 80px;
     background-color: var(--primary-color);
+    color: var(--bg-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -157,7 +159,7 @@ body {
 }
 
 .section-title {
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     font-size: 2rem;
     color: var(--dark-color);
     margin-bottom: 15px;
@@ -170,6 +172,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
     font-weight: 300;
+    text-align: left;
 }
 /* Footer */
 
@@ -205,29 +208,29 @@ body {
     .main-title {
         font-size: 2.5rem;
     }
-    
-.footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-    margin-top: 80px;
-}
-    
+
+    .footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 40px 0;
+        margin-top: 80px;
+    }
+
     .text-item {
         font-size: 0.85rem;
         padding: 6px 12px;
     }
-    
+
     .cta-button {
         padding: 16px 30px;
         font-size: 1rem;
     }
-    
+
     .description {
         font-size: 1rem;
     }
-    
+
     .section-title {
         font-size: 1.5rem;
     }
@@ -240,11 +243,11 @@ body {
     .main-title {
         font-size: 2rem;
     }
-    
+
     .rotating-text-container {
         min-height: 60px;
     }
-    
+
     .cta-button {
         padding: 14px 25px;
         font-size: 0.9rem;
