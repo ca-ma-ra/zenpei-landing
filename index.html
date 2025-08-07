@@ -1,0 +1,370 @@
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu crypto por fin sirve para comprar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #f75e5f;
+            --dark-color: #0c0c30;
+            --bg-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: var(--bg-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Logo */
+        .logo-container {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 60px;
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: white;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 0 40px;
+        }
+
+        .main-title {
+            font-family: 'Lora', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .rotating-text-container {
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .text-item {
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 2px solid var(--primary-color);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+            display: inline-block;
+        }
+
+        .text-item.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            max-width: 600px;
+            margin: 0 auto 60px;
+            font-weight: 300;
+        }
+
+        /* CTA Button */
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            font-family: 'Roboto Mono', monospace;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(15, 15, 48, 0.3);
+        }
+
+        .cta-subtitle {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--dark-color);
+            opacity: 0.7;
+        }
+
+        /* Sections */
+        .sections {
+            padding: 60px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .section-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+
+        .section-title {
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .section-text {
+            font-size: 1rem;
+            color: var(--dark-color);
+            max-width: 500px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        /* Footer */
+
+        .footer-content {
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-link:hover {
+            opacity: 0.8;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 80px;
+        }
+            
+            .text-item {
+                font-size: 0.85rem;
+                padding: 6px 12px;
+            }
+            
+            .cta-button {
+                padding: 16px 30px;
+                font-size: 1rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+
+            .container {
+                padding: 0 15px;
+            }
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .rotating-text-container {
+                min-height: 60px;
+            }
+            
+            .cta-button {
+                padding: 14px 25px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo-placeholder">TU LOGO</div>
+    </div>
+
+    <div class="container">
+
+        <header class="header">
+            <h1 class="main-title">Tu crypto por fin sirve para comprar</h1>
+            
+            <div class="rotating-text-container">
+                <span class="text-item active">tacos</span>
+                <span class="text-item">la tiendita de la esquina</span>
+                <span class="text-item">el café del barrio</span>
+                <span class="text-item">los tamales</span>
+            </div>
+            
+            <p class="description">
+                Conectamos tu wallet con el changarro de la esquina - tú pagas crypto, ellos reciben pesos al instante.
+            </p>
+        </header>
+
+        <div class="cta-section">
+            <a href="#waitlist" class="cta-button">Únete al Waitlist</a>
+            <p class="cta-subtitle">Sé el primero en usar crypto en tu barrio</p>
+        </div>
+            <section class="section">
+                <div class="section-icon">
+                    <span>₿</span>
+                </div>
+                <h2 class="section-title">Paga con Crypto</h2>
+                <p class="section-text">
+                    Usa Bitcoin, Ethereum o cualquier crypto directamente desde tu wallet. Sin conversiones complicadas, sin intermediarios molestos.
+                </p>
+            </section>
+
+            <section class="section">
+                <div class="section-icon">
+                    <span>⚡</span>
+                </div>
+                <h2 class="section-title">Conversión Instantánea</h2>
+                <p class="section-text">
+                    Tu crypto se convierte automáticamente a pesos mexicanos en tiempo real. El comercio recibe su dinero al momento, sin volatilidad.
+                </p>
+            </section>
+
+            <section class="section">
+                <div class="section-icon">
+                    <span>🏪</span>
+                </div>
+                <h2 class="section-title">Comercios Locales</h2>
+                <p class="section-text">
+                    Apoya a los negocios de tu barrio mientras usas tu crypto. Desde taquerías hasta tiendas de abarrotes, todos conectados a la economía digital.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Telegram</a>
+                </div>
+                <p class="copyright">
+                    © 2025 CryptoLocal. Revolucionando los pagos del barrio.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        <main class="sections">
+        // Rotating text functionality - tags style
+        const textItems = document.querySelectorAll('.text-item');
+        let currentIndex = 0;
+
+        function rotateText() {
+            // Remove active class from current item
+            textItems[currentIndex].classList.remove('active');
+            
+            // Move to next item
+            currentIndex = (currentIndex + 1) % textItems.length;
+            
+            // Add active class to new item
+            textItems[currentIndex].classList.add('active');
+        }
+
+        // Show first few items initially with stagger
+        setTimeout(() => {
+            textItems[1].classList.add('active');
+        }, 500);
+        
+        setTimeout(() => {
+            textItems[2].classList.add('active');
+        }, 1000);
+        
+        setTimeout(() => {
+            textItems[3].classList.add('active');
+        }, 1500);
+
+        // Start rotation after all items have appeared
+        setTimeout(() => {
+            setInterval(rotateText, 2500);
+        }, 3000);
