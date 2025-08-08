@@ -1,85 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zenpei - Tu crypto por fin sirve para comprar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/main.css">
-</head>
-<body>
-    <div class="logo-container">
-        <div class="logo-placeholder">TU LOGO</div>
-    </div>
-
-    <div class="container">
-
-        <header class="header">
-            <h1 class="main-title">Tu crypto por fin sirve para comprar</h1>
-            
-            <div class="rotating-text-container">
-                <span class="text-item active">tacos</span>
-                <span class="text-item">la tiendita de la esquina</span>
-                <span class="text-item">el café del barrio</span>
-                <span class="text-item">los tamales</span>
-            </div>
-            
-            <p class="description">
-                Conectamos tu wallet con el changarro de la esquina - tú pagas crypto, ellos reciben pesos al instante.
-            </p>
-        </header>
-
-        <div class="cta-section">
-            <a href="#waitlist" class="cta-button">Únete al Waitlist</a>
-            <p class="cta-subtitle">Sé el primero en usar crypto en tu barrio</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>zenpei - paga con crypto en comercios de México</title>
+        <title>zenpei - Tu crypto por fin sirve para comprar</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/main.css" />
+    </head>
+    <body>
+        <div class="logo-container">
+            <div class="logo-placeholder">zenpei</div>
         </div>
-            <section class="section">
-                <div class="section-icon">
-                    <span>₿</span>
-                </div>
-                <h2 class="section-title">Paga con Crypto</h2>
-                <p class="section-text">
-                    Usa Bitcoin, Ethereum o cualquier crypto directamente desde tu wallet. Sin conversiones complicadas, sin intermediarios molestos.
-                </p>
-            </section>
 
-            <section class="section">
-                <div class="section-icon">
-                    <span>⚡</span>
-                </div>
-                <h2 class="section-title">Conversión Instantánea</h2>
-                <p class="section-text">
-                    Tu crypto se convierte automáticamente a pesos mexicanos en tiempo real. El comercio recibe su dinero al momento, sin volatilidad.
-                </p>
-            </section>
-
-            <section class="section">
-                <div class="section-icon">
-                    <span>🏪</span>
-                </div>
-                <h2 class="section-title">Comercios Locales</h2>
-                <p class="section-text">
-                    Apoya a los negocios de tu barrio mientras usas tu crypto. Desde taquerías hasta tiendas de abarrotes, todos conectados a la economía digital.
-                </p>
-            </section>
-        </main>
-    </div>
-
-    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Telegram</a>
+            <header class="header">
+                <h1 class="main-title">Tu crypto por fin sirve para pagar</h1>
+
+                <div class="rotating-text-container">
+                    <span class="text-item active">los tacos</span>
+                    <span class="text-item">la tiendita de la esquina</span>
+                    <span class="text-item">el café del barrio</span>
+                    <span class="text-item">los tamales</span>
                 </div>
-                <p class="copyright">
-                    © 2025 CryptoLocal. Revolucionando los pagos del barrio.
+
+                <p class="description">
+                    Somos el bridge entre tu wallet y los más de 4 millones de
+                    changarros en México. Tú pagas con crypto, ellos reciben
+                    pesos directo a su cuenta de banco.
                 </p>
-            </div>
+
+                <p>
+                    <a href="#waitlist" class="cta-button">Únete al Waitlist</a>
+                </p>
+            </header>
+
+            <section class="section">
+                <div class="section-icon">
+                    <span>1</span>
+                </div>
+                <h2 class="section-title">Cuanto vas a pagar</h2>
+                <p class="section-text">
+                    ** Cantidad en pesos que va a recibir el comercio
+                </p>
+            </section>
+
+            <section class="section">
+                <div class="section-icon">
+                    <span>2</span>
+                </div>
+                <h2 class="section-title">A que cuenta</h2>
+                <p class="section-text">** Cuenta CLABE del comercio</p>
+            </section>
+
+            <section class="section">
+                <div class="section-icon">
+                    <span>3</span>
+                </div>
+                <h2 class="section-title">Con que vas a pagar</h2>
+                <p class="section-text">** USDC / ETH / MXNE / etc</p>
+            </section>
         </div>
-    </footer>
-    <script src="assets/main.js"></script>
-</body>
-</html>    
+
+        <!-- Mobile Payment Confirmation Component -->
+        <section class="payment-confirmation">
+            <div class="container">
+                <div class="smartphone-mockup">
+                    <div class="phone-frame">
+                        <div class="screen-content">
+                            <div class="status-bar">
+                                <div class="time">9:41</div>
+                                <div class="battery">
+                                    <div class="battery-level"></div>
+                                </div>
+                            </div>
+
+                            <div class="payment-interface">
+                                <div class="success-icon">
+                                    <svg
+                                        width="60"
+                                        height="60"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                    >
+                                        <circle
+                                            cx="12"
+                                            cy="12"
+                                            r="12"
+                                            fill="#00C851"
+                                        />
+                                        <path
+                                            d="M9 12l2 2 4-4"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <h3 class="payment-title">Pago exitoso</h3>
+
+                                <div class="payment-details">
+                                    <div class="amount">$250.00 MXN</div>
+                                    <div class="description">
+                                        Clave de rastreo: 1234567890
+                                    </div>
+                                </div>
+
+                                <div class="transaction-info">
+                                    <div class="info-row">
+                                        <span class="label">De:</span>
+                                        <span class="value"
+                                            >Wallet Digital</span
+                                        >
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="label">A:</span>
+                                        <span class="value"
+                                            >Cuenta Bancaria</span
+                                        >
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="label">Fecha:</span>
+                                        <span class="value"
+                                            >15 Ene 2025, 9:41 AM</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="tracking-code">
+                                    <div class="tracking-label">
+                                        Clave de rastreo:
+                                    </div>
+                                    <div class="tracking-number">
+                                        1234567890
+                                    </div>
+                                </div>
+
+                                <div class="action-buttons">
+                                    <button class="btn-secondary">
+                                        Compartir
+                                    </button>
+                                    <button class="btn-primary">
+                                        Descargar recibo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p class="copyright">© 2025 zenpei</p>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/main.js"></script>
+    </body>
+</html>
